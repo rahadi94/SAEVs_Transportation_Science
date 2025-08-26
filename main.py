@@ -4,7 +4,7 @@ from saev.core.model import Model, lg
 import simpy
 import random
 from saev.core.parking import Parking
-from Fleet_sim.read import zones
+from saev.core.read import zones
 from saev.core.vehicle import Vehicle
 from datetime import datetime
 import pandas as pd

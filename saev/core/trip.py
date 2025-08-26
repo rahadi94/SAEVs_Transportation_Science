@@ -1,6 +1,6 @@
 import random
 from saev.core.location import generate_random
-from Fleet_sim.read import zones
+from saev.core.read import zones
 
 
 class Trip:

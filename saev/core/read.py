@@ -1,9 +1,14 @@
+import os
 import pandas as pd
 
 from saev.core.Zone import Zone
 
-demand_table = pd.read_csv('demand_table.csv')
-OD_table = pd.read_csv('origin_destination.csv')
+DATA_DIR = os.getenv('SAEV_DATA_DIR', os.path.join(os.getcwd(), 'data', 'input'))
+print(DATA_DIR)
+
+
+demand_table = pd.read_csv(os.path.join(DATA_DIR, 'demand_table.csv'))
+OD_table = pd.read_csv(os.path.join(DATA_DIR, 'origin_destination.csv'))
 
 z = 0
 zones = list()

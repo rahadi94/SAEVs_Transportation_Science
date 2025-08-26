@@ -47,4 +47,13 @@ saev/
 main.py
 Visualization/
 requirements.txt
+data/
+  input/
+  output/
+```
+
+Set input data directory (optional):
+
+```bash
+export SAEV_DATA_DIR=$(pwd)/data/input
 ```

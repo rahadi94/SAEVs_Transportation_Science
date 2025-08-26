@@ -2,7 +2,7 @@ from saev.core.location import find_zone
 import numpy as np
 from math import ceil
 from saev.core.log import lg
-from Fleet_sim.read import zones, charging_cost
+from saev.core.read import zones, charging_cost
 
 
 class Vehicle:

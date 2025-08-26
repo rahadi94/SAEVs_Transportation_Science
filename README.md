@@ -7,16 +7,13 @@ It supports modeling of fleet operations, trip matching, charging strategies, an
 
 ## 🚀 Features
 
-- **Fleet Simulation (`Fleet_sim/`)**
-  - Models vehicles, trips, zones, charging stations, and parking.
-  - Implements trip matching and fleet management logic.
-  - Supports multiple reinforcement learning (RL) approaches for dispatching and charging:
-    - Deep Q-Networks (`DQN`, `sub_DQN`, `single_DQN`)
-    - Soft Actor-Critic (`single_SAC`)
+- **Core Simulation (`saev/core/`)**
+  - Models vehicles, trips, zones, charging stations, parking, matching, fleet, and model.
+  - Central logging in `saev/core/log.py`.
 
-- **Reinforcement Learning Environment**
-  - `rl_environment.py` provides an interface for training RL algorithms.
-  - Includes reward mechanisms for profitability, service rate, and energy efficiency.
+- **Reinforcement Learning (`saev/rl/`)**
+  - `saev/rl/environment.py` provides the gym environment for training.
+  - Agents and configs exposed via `saev/rl/agents/`.
 
 - **Visualization Tools (`Visualization/`)**
   - Scripts for analyzing trips, charging, state of charge (SoC), and performance.
@@ -28,3 +25,26 @@ It supports modeling of fleet operations, trip matching, charging strategies, an
 ---
 
 ## 📂 Repository Structure
+
+```
+saev/
+  core/
+    charging_station.py
+    location.py
+    parking.py
+    trip.py
+    vehicle.py
+    Zone.py
+    Matching.py
+    read.py
+    log.py
+    model_impl.py
+    model.py
+  rl/
+    environment.py
+    agents/
+      __init__.py
+main.py
+Visualization/
+requirements.txt
+```

@@ -1,11 +1,11 @@
-from Fleet_sim.charging_station import ChargingStation
-from Fleet_sim.location import Location
-from Fleet_sim.model import Model, lg
+from saev.core.charging_station import ChargingStation
+from saev.core.location import Location
+from saev.core.model import Model, lg
 import simpy
 import random
-from Fleet_sim.parking import Parking
+from saev.core.parking import Parking
 from Fleet_sim.read import zones
-from Fleet_sim.vehicle import Vehicle
+from saev.core.vehicle import Vehicle
 from datetime import datetime
 import pandas as pd
 

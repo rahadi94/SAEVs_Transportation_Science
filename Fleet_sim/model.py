@@ -4,16 +4,16 @@ from Fleet_sim.fleet import Fleet
 from Fleet_sim.location import find_zone, closest_facility
 from Fleet_sim.log import lg
 from Fleet_sim.read import charging_cost
-from Fleet_sim.single_SAC import config
+from saev.rl.agents import config
 from Fleet_sim.trip import Trip
 from Fleet_sim.Matching import matching
 from math import ceil
-from Fleet_sim.single_DQN import SingleAgent
+from saev.rl.agents import SingleAgent
 import random
 from Deep_Reinforcement_Learning_Algorithms_with_PyTorch_master.agents.actor_critic_agents.SAC_Discrete import SAC_Discrete
 from Deep_Reinforcement_Learning_Algorithms_with_PyTorch_master.agents.DQN_agents.DDQN import DDQN
 import numpy as np
-from rl_environment import ChargingHubInvestmentEnv, convert_to_vector
+from saev.rl.environment import ChargingHubInvestmentEnv, convert_to_vector
 
 
 class Model:

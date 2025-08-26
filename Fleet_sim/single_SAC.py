@@ -1,5 +1,5 @@
 from Deep_Reinforcement_Learning_Algorithms_with_PyTorch_master.utilities.data_structures.Config import Config
-from rl_environment import ChargingHubInvestmentEnv
+from saev.rl.environment import ChargingHubInvestmentEnv
 
 config = Config()
 config.seed = 1

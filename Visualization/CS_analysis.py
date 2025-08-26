@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
 from IPython.display import set_matplotlib_formats
-from Fleet_sim.log import lg
+from saev.core.log import lg
 
 set_matplotlib_formats('retina')
 # BASE_PATH = '/home/rahadi/PycharmProjects/ssh/'

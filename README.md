@@ -3,6 +3,10 @@
 This repository provides a simulation and reinforcement learning environment for **Shared Autonomous Electric Vehicles (SAEVs)**.  
 It supports modeling of fleet operations, trip matching, charging strategies, and vehicle scheduling to study the efficiency and economics of SAEVs in urban transportation systems.
 
+📄 This repository accompanies the following paper:  
+[*Fleet Operations of Shared Autonomous Electric Vehicles: Impacts of Charging Infrastructure and Charging Strategy*](https://pubsonline.informs.org/doi/abs/10.1287/trsc.2022.1187), published in *Transportation Science*.
+
+---
 ---
 
 ## 🚀 Features
